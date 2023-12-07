@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def root(request):
     return HttpResponse('Hello Django and Docker')
+
+def goodbye(request):
+    return render(request, 'index.html')
